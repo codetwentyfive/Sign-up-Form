@@ -1,14 +1,242 @@
- @font-face {
+:root {
+    --color: #ebd3a8;
+    --font-color: rgb(194, 140, 39);
+}
+
+
+@font-face {
     font-family: "Pacifico-Regular";
     src: local("Pacifico-Regular"),
-    url(/home/codee25/repos/Sign-up Form/font/Pacifico-Regular.ttf)
+        url(./font/Pacifico-Regular.ttf)
+}
 
- }
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: , sans-serif;
 
- body {
+}
+
+.content {
+    width: 100vw;
+    height: 100vh;
+}
+
+.content,
+.logo {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+.bg-pic {
+
     background-image: url(background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: center;
+    width: 40vw;
 
- }
+}
+
+.logo {
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: relative;
+    top: 20vh;
+    gap: 1vw;
+    padding: 15px 0;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h1 {
+    font-family: "Pacifico-Regular";
+}
+
+.dumpling {
+    height: 10vh;
+    filter: invert(91%) sepia(4%) saturate(2226%) hue-rotate(356deg) brightness(89%) contrast(107%);
+
+
+
+}
+
+.right {
+    display: flex;
+    background-color: #0c1e22;
+    width: 60vw;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.pleft {
+    padding-left: 4vw;
+}
+
+.form-title {
+    color: #0c1e22;
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.text {
+    color: #ebd3a8;
+    font-weight: 500;
+    width: 90%;
+    font-size: 1.2rem;
+}
+
+input {
+    border: 1px solid rgb(77, 77, 77);
+    border-radius: 3px;
+
+}
+
+.input {
+    display: flex;
+    flex-flow: column wrap;
+    width: 40%;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid #6190ba;
+}
+
+.cta {
+    margin: 40px 0 80px;
+}
+
+.form-title {
+    color: #102526;
+    font-size: 1.5em;
+
+
+}
+
+
+.form {
+    background-color: #99b9d0;
+    box-shadow: 0 10px 20px -2px rgb(22, 22, 22);
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+button {
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--color);
+    font-weight: 700;
+    font-size: 1.2em;
+    border: 2px solid var(--color);
+    border-radius: 5px;
+    padding: 10px 40px;
+    margin: 40px 0;
+}
+
+button:hover {
+    background-color: var(--color);
+    color: black;
+
+}
+
+label {
+    color: #0c1e22;
+}
+
+.log-in {
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color);
+    font-weight: 700;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .content {
+        flex-flow: column;
+        height: auto;
+        text-align: center;
+    }
+
+    .bg-pic {
+        width: 100vw;
+        height: 15vh;
+        display: flex;
+        background-size: 100vw;
+    }
+
+    .logo {
+        width: 100vw;
+        position: static;
+        gap: 10px;
+    }
+
+    .right {
+        width: auto;
+        height: auto;
+    }
+
+    .text {
+        width: auto;
+        margin-top: 30px;
+
+    }
+
+    .left {
+        padding: 10px 20px;
+    }
+
+    .cta {
+        padding: 20px 0;
+        margin: 0;
+    }
+
+    .form {
+        flex-flow: column nowrap;
+        align-items: center;
+
+    }
+
+    .input {
+        text-align: left;
+        width: auto;
+        font-size: 0.9em;
+        justify-content: center;
+        align-items: center;
+    }
+
+    input {
+        font-size: 0.9rem;
+        height: 1.5rem;
+        width: 70vw;
+    }
+
+    .button,
+    .log-in {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0px;
+    }
+
+    button {
+        margin-bottom: 0px;
+        width: 60vw;
+        padding: 10px 5px;
+    }
+
+}

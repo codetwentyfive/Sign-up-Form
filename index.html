@@ -1,12 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
- 
+    <div class="content">
+        <div class="bg-pic">
+            <div class="logo">
+                <img src="./dumpling.svg" alt="logo" class="dumpling">
+                <h1>Buuz is <em>Life</em></h1>
+
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="text pleft">
+                <p>Savor the Flavors: Exploring the World of Dumplings!</p>
+                <p>Life is <em>filled</em> with all kinds of goodies.</p>
+                <p class="cta">Find your favorite <Em>filling</Em> with Buuz.com</p>
+            </div>
+
+            <form action="#">
+                <div class="form pleft">
+                    <p class="form-title">Let`s do this!</p>
+
+                    <div class="input">
+                        <label for="firstname">First Name</label>
+                        <input type="text" name="firstname" required>
+                    </div>
+
+                    <div class="input">
+                        <label for="lastname">Last Name</label>
+                        <input type="text" name="lastname" required>
+                    </div>
+
+                    <div class="input">
+                        <label for="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">Email</label>
+                        <input type="email" name="email" required>
+                    </div>
+
+                    <div class="input">
+                        <label for="phonenumber">Phone Number</label>
+                        <input type="tel" name="phonenumber" pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}
+                        ">
+                    </div>
+
+                    <div class="input">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" minlength="8" maxlength="20" required>
+                    </div>
+
+                    <div class="input">
+                        <label for="confirm-password">Confirm password</label>
+                        <input type="password" name="confirm-password" id="confirm-password" required>
+                    </div>
+
+                </div>
+                <div class="button pleft">
+                    <button type="submit">Create Account!</button>
+                </div>
+
+                <div class="log-in pleft"><p>Already have an account?</p><a href="#">Log in</a></div>
+            </form>
+        </div>
+    </div>
+    </div>
+
+
 </body>
+
 </html>
