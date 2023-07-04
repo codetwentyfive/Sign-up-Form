@@ -231,7 +231,7 @@ a {
     .log-in {
         display: flex;
         justify-content: center;
-        margin-bottom: 0px;
+        margin-bottom: 20px;
     }
 
     button {
