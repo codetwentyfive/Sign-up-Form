@@ -1,0 +1,14 @@
+ @font-face {
+    font-family: "Pacifico-Regular";
+    src: local("Pacifico-Regular"),
+    url(/home/codee25/repos/Sign-up Form/font/Pacifico-Regular.ttf)
+
+ }
+
+ body {
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+ }
