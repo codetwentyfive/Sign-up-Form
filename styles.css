@@ -14,7 +14,7 @@
     margin: 0px;
     padding: 0;
     box-sizing: border-box;
-    font-family: , sans-serif;
+    font-family: sans-serif;
 
 }
 
@@ -55,6 +55,7 @@
 
 h1 {
     font-family: "Pacifico-Regular";
+    color: var(--color);
 }
 
 .dumpling {
