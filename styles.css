@@ -44,7 +44,7 @@
 .logo {
     height: auto;
     background-color: rgba(0, 0, 0, 0.7);
-    position: relative;
+    position: sticky;
     top: 20vh;
     gap: 1vw;
     padding: 15px 0;
@@ -94,6 +94,7 @@ em {
     font-weight: 500;
     width: 90%;
     font-size: 1.2rem;
+    padding: 40px;
 }
 
 .filledgoodies {
@@ -123,7 +124,7 @@ input:focus {
 }
 
 .cta {
-    margin: 40px 0 80px;
+    margin: 40px 0 0px;
 }
 
 .form-title {
@@ -168,6 +169,7 @@ label {
 
 .log-in {
     color: #ffffff;
+    padding-bottom: 40px;
 }
 
 a {
@@ -185,9 +187,7 @@ input:required:valid {
     border-color: green;
 }
 
-input:required:invalid {
-    border-color: 
-}
+
 
 input:required:invalid:default {
     border-color: initial;
