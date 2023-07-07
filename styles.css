@@ -95,6 +95,8 @@ em {
     width: 90%;
     font-size: 1.2rem;
     padding: 40px;
+    display: grid;
+    align-items: center;
 }
 
 .filledgoodies {
@@ -212,16 +214,18 @@ input:focus:invalid {
     }
 
     .bg-pic {
+        background-image: url(./mobile-bg.jpg) !important;
         width: 100vw;
-        height: 15vh;
+        height: 35vh;
         display: flex;
-        background-size: 100vw;
+        background-size: cover;
     }
 
     .logo {
         width: 100vw;
         position: static;
         gap: 10px;
+        background-color: none;
     }
 
     .right {
@@ -269,6 +273,7 @@ input:focus:invalid {
         display: flex;
         justify-content: center;
         margin-bottom: 20px;
+        align-items: center;
     }
 
     button {
